@@ -40,12 +40,15 @@ def messagebox_done():
     label_selecione_layout = customtkinter.CTkLabel(master=messagebox, text="Arquivo salvo como Excel!")
     label_selecione_layout.place(x=50, y=30)
 
+
+    # Criando um botao de ok, que quando selecionado, fecha a tela de mensagem
     botao_ok = customtkinter.CTkButton(master=messagebox, text="OK", width=40, height=20, command=lambda: remove_screen(messagebox))
     botao_ok.place(x=205, y=75)
 
     messagebox.mainloop()
 
 def messagebox_error():
+    #Cria uma massage box de error
     messagebox = customtkinter.CTk()
     messagebox.geometry("250x100")
     messagebox.title("Erro!")
@@ -59,6 +62,7 @@ def messagebox_error():
     lbl_select_file = customtkinter.CTkLabel(master=messagebox, text="Por favor, selecione um arquivo!")
     lbl_select_file.place(x=30, y=30)
 
+    # Criando um botao de ok, que quando selecionado, fecha a tela de mensagem
     botao_ok = customtkinter.CTkButton(master=messagebox, text="OK", width=40, height=20, command=lambda: remove_screen(messagebox))
     botao_ok.place(x=205, y=75)
 
