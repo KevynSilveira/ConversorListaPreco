@@ -52,7 +52,6 @@ def criar_interface():
     opcoes_layout = ["Clamed", "Sesi"]
 
     # Criar os widgets da interface
-
     label_selecione_layout = customtkinter.CTkLabel(master=janela, text="Selecione o layout")
     label_selecione_layout.place(x=60, y=10)
 
