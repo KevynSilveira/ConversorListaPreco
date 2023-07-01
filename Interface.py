@@ -11,6 +11,7 @@ def criar_interface():
     customtkinter.set_appearance_mode("dark")
     customtkinter.set_default_color_theme("dark-blue")
 
+    #definindo tamanho, nome e retirando a opcao de maximizar
     janela = customtkinter.CTk()
     janela.geometry("230x250")
     janela.title("Conversor")
