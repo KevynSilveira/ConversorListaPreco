@@ -4,7 +4,6 @@ import customtkinter
 from Clamed import converter_arquivo_excel_clamed
 from Sesi import converter_arquivo_excel_sesi
 
-
 def criar_interface():
     # Criar a janela principal
     customtkinter.set_appearance_mode("dark")
@@ -14,7 +13,6 @@ def criar_interface():
     janela.geometry("230x250")
     janela.title("Conversor")
     janela.resizable(False, False)
-    janela.iconbitmap('Neosul.ico')
 
     label_selecione_layout = customtkinter.CTkLabel(master=janela, text="Selecione o layout")
     label_selecione_layout.place(x=60, y=10)

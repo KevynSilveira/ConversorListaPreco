@@ -1,1 +1,0 @@
-Este projeto tem como objetivo converter ium arquivo de texto pra excel. 

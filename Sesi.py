@@ -1,7 +1,7 @@
 import pandas as pd
 from tkinter import Tk
 from tkinter.filedialog import askdirectory
-from Messagebox import messagebox_feito
+from Messagebox import messagebox_done
 import os
 
 def converter_arquivo_excel_sesi(caminho_arquivo):
@@ -22,6 +22,6 @@ def converter_arquivo_excel_sesi(caminho_arquivo):
         df.to_excel(caminho_salvar, index=False)
 
         print("Arquivo convertido com sucesso e salvo como Excel!")
-        messagebox_feito()
+        messagebox_done()
     else:
         print("Operação cancelada pelo usuário.")

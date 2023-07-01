@@ -36,9 +36,6 @@ def messagebox_done():
     remove_minimize(messagebox)
     center(messagebox)
 
-    #Adiciona ao frame a logo da Neosul
-    messagebox.iconbitmap('Neosul.ico')
-
     # Criar uma label e atribuir o ícone
     label_selecione_layout = customtkinter.CTkLabel(master=messagebox, text="Arquivo salvo como Excel!")
     label_selecione_layout.place(x=50, y=30)
@@ -57,9 +54,6 @@ def messagebox_error():
     messagebox.resizable(False, False)
     remove_minimize(messagebox)
     center(messagebox)
-
-    #Adiciona ao frame a logo da Neosul
-    messagebox.iconbitmap('Neosul.ico')
 
     # Criar uma label e atribuir o ícone
     lbl_select_file = customtkinter.CTkLabel(master=messagebox, text="Por favor, selecione um arquivo!")
