@@ -55,15 +55,19 @@ def criar_interface():
     label_selecione_layout = customtkinter.CTkLabel(master=janela, text="Selecione o layout")
     label_selecione_layout.place(x=60, y=10)
 
+    #Criando baotao e layout do combobox
     combobox = customtkinter.CTkComboBox(master=janela, values=opcoes_layout, width=200)
     combobox.place(x=15, y=40)
 
+    #Criando a exibicao do caminho do arquivo
     caminho_arquivo = customtkinter.CTkEntry(master=janela, width=200)
     caminho_arquivo.place(x=15, y=130)
 
+    #Criando o botao de selecionar arquivo, onde abre um explorer para poder selecionar
     botao_selecionar_arquivo = customtkinter.CTkButton(master=janela, text="Selecionar arquivo", command=selecionar_arquivo)
     botao_selecionar_arquivo.place(x=50, y=170)
 
+    #faz a conversao e salva o arquivo, no local desejado com o mesmo nome do arquivo original
     botao_converter = customtkinter.CTkButton(master=janela, text="Converter", command=converter, width=200)
     botao_converter.place(x=15, y=210)
 
